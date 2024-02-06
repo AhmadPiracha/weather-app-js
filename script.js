@@ -22,10 +22,9 @@ function searchFunction() {
             alert("Network error occurred. Please try again.");
         };
         request.open(
-            "GET",
-            `http://api.weatherapi.com/v1/current.json?key=https://api.weatherapi.com/v1/current.json?key=045ac6e30c6e4b83bba92117240602&q=lahore&aqi=no
-&q=${cityName}&aqi=no`
-        );
+    "GET",
+    `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${cityName}&aqi=no`
+);
 
         request.send();
     }
