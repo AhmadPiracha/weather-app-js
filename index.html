@@ -23,7 +23,7 @@
 
     <title>Weather App</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -39,7 +39,13 @@
               placeholder="Enter city name"
             />
             <!-- Suggesstions -->
-            <ul id="suggestions" class="list-group position-absolute mt-2"></ul>
+
+            <div class="mb-3">
+              <ul
+                id="suggestions"
+                class="list-group position-relative mt-2"
+              ></ul>
+            </div>
           </div>
           <div class="mb-5 d-flex justify-content-center">
             <button
@@ -61,7 +67,6 @@
           ></div>
         </div>
       </div>
-
     </div>
 
     <script src="script.js"></script>
