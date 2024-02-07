@@ -72,10 +72,9 @@ function searchWeather() {
   );
 
   request.send();
+  clearData();
 
   $("#cityName").val("");
-
-  clearData();
 }
 
 function displayWeatherData(data) {
@@ -136,7 +135,10 @@ function displaySuggestions(suggestions) {
 
   if (suggestions && suggestions.length > 0) {
     suggestions.forEach((suggestion) => {
-      output.append(`<li class="list-group-item">${suggestion.name}</li>`);
+      output.append(`
+      <li class="list-group-item">${suggestion.name}</li>
+      
+      `);
     });
 
     output.find("li").on("click", function () {
